@@ -13,7 +13,7 @@ import { OrganizationsComponent } from './organizations/organizations.component'
     AppComponent,PersonalInfoComponent, PanelComponent, RepositoriesComponent, OrganizationsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule
   ],
   providers: [GithubService],
